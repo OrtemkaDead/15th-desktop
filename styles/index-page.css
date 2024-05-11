@@ -71,15 +71,10 @@
 }
 
 .welcome-block__buttons {
-  display: flex;
   margin-top: 35px;
 }
 
-.welcome-block__create-account-button {
-  margin-right: 16px;
-}
-
-.welcome-block__create-account-button, .welcome-block__login-button {
+.welcome-block__check-prices {
   font-family: 'SF-Pro-Medium', sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -132,23 +127,16 @@
   margin-bottom: 320px;
 }
 
-.service-appointment-block__platform-links {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 40px;
+.service-appointment-block__download-button {
+  margin-top: 35px;
+  width: max-content;
 }
 
-.service-appointment-block__download-image {
-  width: 240px;
-  height: 80px;
-
-  border-radius: 16px;
+.service-appointment-block__download-icon {
+  margin-right: 6px;
+  color: #000;
 }
 
-.service-appointment-block__download-image:first-child {
-  margin-right: 16px;
-}
 
 /*? waiting-area-block */
 .waiting-area-block {
@@ -196,10 +184,6 @@
   .service-appointment-block__text-side {
     max-width: 50%;
   }
-
-  .service-appointment-block__download-image {
-    width: 190px;
-  }
 }
 @media (max-width: 768px) {
   .waiting-area-block {
@@ -215,22 +199,6 @@
     min-width: 340px;
     margin-right: 6px;
   }
-
-  .service-appointment-block__platform-links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  .service-appointment-block__download-image {
-    width: 200px;
-  }
-  
-  .service-appointment-block__download-image:first-child {
-    margin-bottom: 8px;
-    margin-right: 0;
-  }
-
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .welcome-block {
@@ -240,11 +208,7 @@
     background-size: cover;
   }
 
-  .welcome-block__text-side {
-  }
-
   .welcome-block__image-side {
-    /* min-width: 300px; */
     min-width: 150px;
   }
   
@@ -270,16 +234,14 @@
   }
   
   .welcome-block__buttons {
-    flex-direction: column;
     margin-top: 20px;
   }
   
-  .welcome-block__create-account-button {
+  .welcome-block__check-prices {
     margin-bottom: 10px;
-    margin-right: 0;
   }
   
-  .welcome-block__create-account-button, .welcome-block__login-button {
+  .welcome-block__check-prices {
     font-size: 16px;
     line-height: 20px;
   }
