@@ -39,6 +39,22 @@
   flex-direction: column;
 }
 
+.welcome-block__image-container {
+  position: relative;
+  min-width: 30%;
+  max-width: 300px;
+}
+
+.welcome-block__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 300px;
+  max-height: 150%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .welcome-block__logo {
   width: 185px;
   height: 70px;
