@@ -304,7 +304,7 @@
   /* !!! */
   .service-appointment-block__text-side {
     flex: 0;
-    margin-bottom: 0;
+    margin-bottom: 120px;
   }
   
   .service-appointment-block__platform-links {
@@ -325,7 +325,7 @@
   
   /*? waiting-area-block */
   .waiting-area-block {
-    padding: 150px 0 150px;
+    padding: 100px 0 50px;
   }
   
   .waiting-area-block__content {
