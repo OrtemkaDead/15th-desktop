@@ -1,0 +1,328 @@
+/*! price list page */
+.price-list-page {
+  background-color: #0B0B0B;
+}
+
+/*? welcome price block */
+.welcome-price-block {
+  padding: 170px 0 100px;
+  overflow: hidden;
+
+  color: #fff;
+
+  background-color: #0B0B0B;
+}
+
+.welcome-price-block .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.welcome-price-block__image-side {
+  position: relative;
+  width: 40%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.welcome-price-block__car-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.welcome-price-block__text-side {
+  min-width: 60%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-price-block__logo {
+  width: 185px;
+  height: 70px;
+}
+
+.welcome-price-block__title {
+  margin-top: 20px;
+}
+
+.welcome-price-block__subtitle {}
+
+.welcome-price-block__description {
+  margin-top: 20px;
+
+  color: #9D9D9D;
+}
+
+.welcome-price-block__button {
+  margin-top: 35px;
+  width: max-content;
+
+  font-family: 'SF-Pro-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/*? price cards */
+.price-cards-block {
+  color: #fff;
+  background-color: #0B0B0B;
+}
+
+.price-cards-block__info-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-family: 'SF-Pro-Medium', sans-serif;
+  color: #9D9D9D;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.price-cards-block__cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-right: 10px;
+
+  border-radius: 20px;
+  border: 1px solid #666666;
+}
+
+.price-card:last-child {
+  margin-right: 0;
+}
+
+.price-card__content {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 32px 0;
+}
+
+.price-card__image {
+  margin-top: 25px;
+}
+
+.price-card__title {
+  font-family: 'SF-Pro-Bold', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.price-card__option {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.price-card__option-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-card__option-name {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.price-card__option-description {
+  font-size: 14px;
+  line-height: 16px;
+  color: #9D9D9D;
+}
+
+.price-card__option-price {
+  font-family: 'SF-Pro-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*? additional services block */
+.additional-services-block {
+  padding: 30px 0 200px;
+
+  color: #fff;
+
+  background-color: #0B0B0B;
+}
+
+.additional-services-block__content {
+  padding: 28px 48px 48px;
+
+  border: 1px solid #666666;
+  border-radius: 20px;
+}
+
+.additional-services-block__title {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.additional-options {
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-options__left-side, .additional-options__right-side {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.additional-options__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.additional-options__item:last-child {
+  margin-bottom: 0;
+}
+
+.additional-options__item-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-options__item-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.additional-options__item-description {
+  font-size: 14px;
+  line-height: 16px;
+  color: #9D9D9D;
+}
+
+.additional-options__item-price {
+  font-family: 'SF-Pro-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.additional-options__separator {
+  width: 1px;
+  min-height: 100%;
+  margin: 0 40px;
+
+  background-color: #666666;
+}
+
+/*? media  */
+@media (max-width: 1024px) {
+  .price-card__content {
+    margin: 40px 16px 0;
+  }
+}
+@media (max-width: 1005px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  .price-card__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .price-list-page {
+    background-image: url(../images/price-list-page-gradient-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /*? welcome price block */
+  .welcome-price-block {
+    padding: 120px 0 30px;
+
+    background-color: transparent;
+  }
+
+  .welcome-price-block__car-image {
+    height: 100%;
+    width: max-content;
+  }
+  
+  .welcome-price-block__logo {
+    width: 105px;
+    height: 40px;
+  }
+  
+  .welcome-price-block__title {
+    margin-top: 10px;
+  }
+  
+  .welcome-price-block__button {
+    margin-top: 20px;
+  
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  /*? price cards */
+  .price-cards-block {
+    background-color: transparent;
+  }
+  
+  .price-cards-block__info-text {
+    display: none;
+    opacity: 0;
+  }
+  
+  .price-cards-block__cards {
+    margin-top: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .price-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .price-card__content {
+    display: flex;
+    flex-direction: column;
+    /* !!! */
+    margin: 40px 32px 0;
+  }
+  
+  /*? additional services block */
+  .additional-services-block {
+    padding: 0 0 20px;
+  
+    background-color: transparent;
+  }
+  
+  .additional-services-block__content {
+    padding: 24px 48px 48px;
+  }
+  
+  .additional-options {
+    flex-direction: column;
+  }
+  
+  .additional-options__separator {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+  }
+}

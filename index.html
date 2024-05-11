@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/index-page.css" />
     <title>15TH</title>
   </head>
-  <body>
+  <body class="index-page">
     <header class="header">
       <div class="container">
         <nav class="header__nav">
           <a href="index.html" class="header__link header__link--active">
             Главная
           </a>
-          <a href="price-list.html" class="header__link">Зайти на мойку</a>
+          <a href="price-list.html" class="header__link">Запись на мойку</a>
           <a href="#" class="header__link">Забронировать стол</a>
           <a href="#" class="header__link">Партнерам</a>
           <a href="#" class="header__link">Информация</a>
@@ -33,16 +34,17 @@
           </p>
 
           <div class="welcome-block__buttons">
-            <button
+            <a
               class="welcome-block__create-account-button button button--primary"
+              href="price-list.html"
             >
-              Создать аккаунт
-            </button>
-            <button
-              class="welcome-block__login-button button button--secondary"
+              Посмотреть цены
+            </a>
+            <!-- <button
+              class="welcome-block__login-button button button--borderless"
             >
               Войти
-            </button>
+            </button> -->
           </div>
         </div>
 

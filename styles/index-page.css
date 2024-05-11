@@ -1,0 +1,318 @@
+/*! index page */
+/*? welcome block */
+.welcome-block {
+  padding: 170px 0 120px;
+
+  color: #fff;
+
+  background-image: url(../images/index-page-gradient-desctop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0B0B0B;
+}
+
+.welcome-block .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.welcome-block__image-side {
+  position: relative;
+  min-width: 300px;
+  min-height: 100%;
+}
+
+.welcome-block__car-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -130px;
+  width: 100%;
+  max-height: 150%;
+  height: max-content;
+}
+
+.welcome-block__text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-block__logo {
+  width: 185px;
+  height: 70px;
+}
+
+.welcome-block__title {
+  margin-top: 20px;
+}
+
+.welcome-block__subtitle {}
+
+.welcome-block__description {
+  margin-top: 20px;
+}
+
+.welcome-block__buttons {
+  display: flex;
+  margin-top: 35px;
+}
+
+.welcome-block__create-account-button {
+  margin-right: 16px;
+}
+
+.welcome-block__create-account-button, .welcome-block__login-button {
+  font-family: 'SF-Pro-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/*? service-appointment-block */
+.service-appointment-block {
+  padding: 130px 0 0;
+
+  color: #000;
+
+  background-color: #fff;
+}
+
+.service-appointment-block .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-appointment-block__title {}
+.service-appointment-block__subtitle {}
+
+.service-appointment-block__content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-appointment-block__image-side {
+  position: relative;
+  min-width: 460px;
+  min-height: 100%;
+  margin-right: 40px;
+}
+
+.service-appointment-block__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -130px;
+  width: 100%;
+  max-height: 120%;
+  height: max-content;
+  object-fit: contain;
+}
+
+.service-appointment-block__text-side {
+  flex: 1;
+  margin-bottom: 320px;
+}
+
+.service-appointment-block__platform-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.service-appointment-block__download-image {
+  width: 240px;
+  height: 80px;
+
+  border-radius: 16px;
+}
+
+.service-appointment-block__download-image:first-child {
+  margin-right: 16px;
+}
+
+/*? waiting-area-block */
+.waiting-area-block {
+  padding: 280px 0 120px;
+
+  color: #fff;
+
+  background-color: #000;
+}
+
+.waiting-area-block__content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.waiting-area-block__text-side {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.waiting-area-block__image-side {
+  width: 50%;
+}
+
+.waiting-area-block__image {
+  width: 100%;
+}
+
+/*? media */
+@media (max-width: 1024px) {
+  .service-appointment-block__image-side {
+    min-width: 400px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1005px) {
+  .service-appointment-block__image-side {
+    min-width: 400px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .service-appointment-block__text-side {
+    max-width: 50%;
+  }
+
+  .service-appointment-block__download-image {
+    width: 190px;
+  }
+}
+@media (max-width: 768px) {
+  .waiting-area-block {
+    padding: 160px 0 80px;
+  }
+
+
+  .service-appointment-block__text-side {
+    margin-bottom: 220px;
+  }
+
+  .service-appointment-block__image-side {
+    min-width: 340px;
+    margin-right: 6px;
+  }
+
+  .service-appointment-block__platform-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .service-appointment-block__download-image {
+    width: 200px;
+  }
+  
+  .service-appointment-block__download-image:first-child {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .welcome-block {
+    padding: 120px 0 20px;
+  
+    background-image: url(../images/index-page-gradient-mobile.png);
+    background-size: cover;
+  }
+
+  .welcome-block__text-side {
+  }
+
+  .welcome-block__image-side {
+    /* min-width: 300px; */
+    min-width: 150px;
+  }
+  
+  .welcome-block__car-image {
+    width: 150%;
+    right: -50%;
+    top: inherit;
+    bottom: -120px;
+    max-height: 130%;
+  }
+  
+  .welcome-block__logo {
+    width: 105px;
+    height: 40px;
+  }
+  
+  .welcome-block__title {
+    margin-top: 10px;
+  }
+
+  .welcome-block__description {
+    color: #9D9D9D;
+  }
+  
+  .welcome-block__buttons {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .welcome-block__create-account-button {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  
+  .welcome-block__create-account-button, .welcome-block__login-button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  /*? service-appointment-block */
+  .service-appointment-block {
+    padding: 140px 0 0;
+  }
+  
+  .service-appointment-block__content {
+    margin-top: 20px;
+  }
+  
+  .service-appointment-block__image-side {
+    min-width: 200px;
+    margin-right: 6px;
+  }
+  
+  .service-appointment-block__image {
+    max-height: 120%;
+  }
+  /* !!! */
+  .service-appointment-block__text-side {
+    flex: 0;
+    margin-bottom: 0;
+  }
+  
+  .service-appointment-block__platform-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .service-appointment-block__download-image {
+    width: 120px;
+    height: 42px;
+  }
+  
+  .service-appointment-block__download-image:first-child {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+  
+  /*? waiting-area-block */
+  .waiting-area-block {
+    padding: 150px 0 150px;
+  }
+  
+  .waiting-area-block__content {
+    margin-top: 20px;
+  }
+}
